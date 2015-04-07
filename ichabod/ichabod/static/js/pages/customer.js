@@ -3,16 +3,16 @@ var PageCustomer = {
 
     name: 'customer',
     id: 'page-customer',
-    load : function(doneCallback) {
+    load : function(show, value) {
 
-        var url = 'customers/:0';
+        var url = 'customers/:' + value;
         
         console.log("Loading customer data ...");
         
         $.getJSON(url, function(customer) {
             PageCustomer.customer = customer;
             PageCustomer._showCustomerInfo();
-            doneCallback('customer');
+            show('customer');
         });
     },
     unload : function () {

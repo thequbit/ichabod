@@ -122,7 +122,12 @@ var Pages = {
         
         if ( typeof page.load !== 'undefined' ) {
             console.log("Pages.loadPage(), calling page.loadFunction()");
-            page.load( Pages._showPage );
+            url = location.hash.slice(1)
+            value = ''
+            if ( url.split('/').length == 2 ) {
+                value = url.split('/')[1];
+            }
+            page.load( Pages._showPage, value );
         }
     }
     
