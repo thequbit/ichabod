@@ -5,19 +5,19 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
     
-    <link rel="stylesheet" href="foundation/css/foundation.css" />
-    <link rel="stylesheet" href="foundation/css/foundation-datepicker.css" />
-    <link rel="stylesheet" href="foundation/css/foundation-datatables.css" />
+    <link rel="stylesheet" href="static/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="static/foundation/css/foundation-datepicker.css" />
+    <link rel="stylesheet" href="static/foundation/css/foundation-datatables.css" />
 
-    <link rel="stylesheet" href="foundation/css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="static/foundation/css/foundation-icons/foundation-icons.css" />
 
-    <!--<link rel="stylesheet" href="css/venter/jquery-iu-1.11.4.css" />-->
+    <!--<link rel="stylesheet" href="static/css/venter/jquery-iu-1.11.4.css" />-->
     
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="static/css/site.css" />
     
-    <link rel="stylesheet" href="css/customers.css" />
+    <link rel="stylesheet" href="static/css/customers.css" />
 
     <style>
         
@@ -252,47 +252,47 @@
         </div>
     </div>
     
-    <script src="js/site.js"></script>
+    <script src="static/js/site.js"></script>
 
-    <script src="foundation/js/vendor/jquery.js"></script>
+    <script src="static/foundation/js/vendor/jquery.js"></script>
    
-    <script src="foundation/js/foundation/foundation.js"></script>
+    <script src="static/foundation/js/foundation/foundation.js"></script>
     
-    <script src="foundation/js/foundation/foundation.dropdown.js"></script>
-    <script src="foundation/js/foundation/foundation.reveal.js"></script>
-    <script src="foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="static/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="static/foundation/js/foundation/foundation.reveal.js"></script>
+    <script src="static/foundation/js/foundation/foundation.topbar.js"></script>
 
-    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="static/foundation/js/vendor/modernizr.js"></script>
 
-    <script src="foundation/js/foundation-datepicker.js"></script>
+    <script src="static/foundation/js/foundation-datepicker.js"></script>
     
-    <script src="foundation/js/vendor/jquery.datatables.1.9.4.min.js"></script>
-    <script src="foundation/js/foundation-datatables.js"></script>
+    <script src="static/foundation/js/vendor/jquery.datatables.1.9.4.min.js"></script>
+    <script src="static/foundation/js/foundation-datatables.js"></script>
    
-    <!--<script src="js/vender/jquery-ui-1.11.4.js"></script>-->
+    <!--<script src="static/js/vender/jquery-ui-1.11.4.js"></script>-->
    
-    <script src="js/TableMaker.js"></script>
+    <script src="static/js/TableMaker.js"></script>
  
-    <script src="js/Pages.js"></script>
+    <script src="static/js/Pages.js"></script>
     
     <script>
         
     </script>
     
-    <script src="js/pages/loading.js"></script>
-    <script src="js/pages/home.js"></script>
-    <script src="js/pages/customers.js"></script>
-    <script src="js/pages/customer.js"></script>
-    <script src="js/pages/accounts.js"></script>
-    <script src="js/pages/contacts.js"></script>
-    <script src="js/pages/leads.js"></script>
-    <script src="js/pages/opertunities.js"></script>
-    <script src="js/pages/jobs.js"></script>
-    <script src="js/pages/files.js"></script>
-    <script src="js/pages/assets.js"></script>
-    <script src="js/pages/reports.js"></script>
-    <script src="js/pages/settings.js"></script>
-    <script src="js/pages/logout.js"></script>
+    <script src="static/js/pages/loading.js"></script>
+    <script src="static/js/pages/home.js"></script>
+    <script src="static/js/pages/customers.js"></script>
+    <script src="static/js/pages/customer.js"></script>
+    <script src="static/js/pages/accounts.js"></script>
+    <script src="static/js/pages/contacts.js"></script>
+    <script src="static/js/pages/leads.js"></script>
+    <script src="static/js/pages/opertunities.js"></script>
+    <script src="static/js/pages/jobs.js"></script>
+    <script src="static/js/pages/files.js"></script>
+    <script src="static/js/pages/assets.js"></script>
+    <script src="static/js/pages/reports.js"></script>
+    <script src="static/js/pages/settings.js"></script>
+    <script src="static/js/pages/logout.js"></script>
    
     
     <script>

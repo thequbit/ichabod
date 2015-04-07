@@ -6,7 +6,7 @@ var PageCustomers = {
     _currentId: undefined,
     load : function(doneCallback) {
         
-        var url = 'data/customers.json';
+        var url = 'customers/';
         
         // get the customers from the server, then process them for display
         $.getJSON(url, function(customers) {

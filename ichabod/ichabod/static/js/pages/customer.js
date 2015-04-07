@@ -5,7 +5,7 @@ var PageCustomer = {
     id: 'page-customer',
     load : function(doneCallback) {
 
-        var url = 'data/customer.json';
+        var url = 'customers/:0';
         
         console.log("Loading customer data ...");
         
