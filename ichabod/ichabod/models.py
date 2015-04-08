@@ -191,7 +191,7 @@ class Leads(Base, CreationMixin):
 class Opertunities(Base, CreationMixin):
 
     __tablename__ = 'opertunities'
-    id = Opertunities = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True)
 
     account_id = Column(Integer, ForeignKey('accounts.id'))
     load_id = Column(Integer, ForeignKey('leads.id'))    
