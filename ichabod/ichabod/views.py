@@ -80,13 +80,19 @@ def index(request):
     return {}
 
 @view_config(request_method='GET', route_name='customers', renderer='json')
-def customers(request):
+def get_customers(request):
 
     return the_customers
 
 @view_config(request_method='GET', route_name='customer', renderer='json')
-def customer(request):
+def get_customer(request):
 
     id = request.matchdict['id']
 
     return the_customers[0]
+
+@view_config(request_method='GET', route_name='accounts', renderer='json')
+def get_accounts(request):
+
+    return []
+

@@ -3,15 +3,19 @@ var PageAccounts = {
 
     name: 'accounts',
     id: 'page-accounts', 
-    load : function(doneCallback) {
+    load : function(show, url) {
         
-        // do async things here, and then call doneCallback() to display page.
+        $.getJSON( '/accounts/', function() {
         
-        doneCallback('accounts');
+            var html = ''
+
+        })
+        
+        show('accounts');
     },
     unload : function () {
     },
-    navigate : function() {
+    navigate : function(value) {
     }
 
 };
