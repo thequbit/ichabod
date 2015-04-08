@@ -20,7 +20,7 @@ def main(global_config, **settings):
 
     config.add_route('/', '/')
     config.add_route('customers','/customers/')
-    config.add_route('customer', '/customers/:{id}')
+    config.add_route('customer', '/customer/:{id}')
 
     config.scan()
 

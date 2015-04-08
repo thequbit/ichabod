@@ -36,19 +36,19 @@
                 <h1 style="color: #008cba; text-align: center;">ichabod</h1>
                 <ul>
                     <hr/>
-                    <li><a href="#/home" id="pages-nav-home" class="size-24"><i class="step fi-home"></i> Home</a></li>
+                    <li><a href="#/home/" id="pages-nav-home" class="size-24"><i class="step fi-home"></i> Home</a></li>
                     <hr/>
-                    <li><a href="#/customers" id="pages-nav-customers" class="size-24"><i class="step fi-torsos-all"></i> Customers</a></li>
-                    <li><a href="#/accounts" id="pages-nav-accounts" class="size-24"><i class="step fi-results-demographics"></i> Accounts</a></li>
-                    <li><a href="#/contacts" id="pages-nav-contacts" class="size-24"><i class="step fi-address-book"></i> Contacts</a></li>
-                    <li><a href="#/leads" id="pages-nav-leads" class="size-24"><i class="step fi-comment"></i> Leads</a></li>
-                    <li><a href="#/opertunities" id="pages-nav-opertunities" class="size-24"><i class="step fi-comments"></i> Opertunities</a></li>
-                    <li><a href="#/jobs" id="pages-nav-jobs" class="size-24"><i class="step fi-book-bookmark"></i> Jobs</a></li>
-                    <li><a href="#/files" id="pages-nav-files" class="size-24"><i class="step fi-page-copy"></i> Files</a></li>
-                    <li><a href="#/assets" id="pages-nav-assets" class="size-24"><i class="step fi-burst"></i> Assets</a></li>
-                    <li><a href="#/reports" id="pages-nav-reports" class="size-24"><i class="step fi-graph-trend"></i> Reports</a></li>
-                    <li><a href="#/settings" id="pages-nav-settings" class="size-24"><i class="step fi-widget"></i> Settings</a></li>
-                    <li><a href="#/logout" id="pages-nav-logout" class="size-24"><i class="step fi-x-circle"></i> Logout</a></li>
+                    <li><a href="#/customers/" id="pages-nav-customers" class="size-24"><i class="step fi-torsos-all"></i> Customers</a></li>
+                    <li><a href="#/accounts/" id="pages-nav-accounts" class="size-24"><i class="step fi-results-demographics"></i> Accounts</a></li>
+                    <li><a href="#/contacts/" id="pages-nav-contacts" class="size-24"><i class="step fi-address-book"></i> Contacts</a></li>
+                    <li><a href="#/leads/" id="pages-nav-leads" class="size-24"><i class="step fi-comment"></i> Leads</a></li>
+                    <li><a href="#/opertunities/" id="pages-nav-opertunities" class="size-24"><i class="step fi-comments"></i> Opertunities</a></li>
+                    <li><a href="#/jobs/" id="pages-nav-jobs" class="size-24"><i class="step fi-book-bookmark"></i> Jobs</a></li>
+                    <li><a href="#/files/" id="pages-nav-files" class="size-24"><i class="step fi-page-copy"></i> Files</a></li>
+                    <li><a href="#/assets/" id="pages-nav-assets" class="size-24"><i class="step fi-burst"></i> Assets</a></li>
+                    <li><a href="#/reports/" id="pages-nav-reports" class="size-24"><i class="step fi-graph-trend"></i> Reports</a></li>
+                    <li><a href="#/settings/" id="pages-nav-settings" class="size-24"><i class="step fi-widget"></i> Settings</a></li>
+                    <li><a href="#/logout/" id="pages-nav-logout" class="size-24"><i class="step fi-x-circle"></i> Logout</a></li>
                 </ul>
             </div>
             

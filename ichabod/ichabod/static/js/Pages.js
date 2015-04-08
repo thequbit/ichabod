@@ -124,10 +124,12 @@ var Pages = {
             console.log("Pages.loadPage(), calling page.loadFunction()");
             url = location.hash.slice(1)
             value = ''
-            if ( url.split('/').length == 2 ) {
-                value = url.split('/')[1];
+            console.log(url.split('/'))
+            if ( url.split('/').length == 3 ) {
+                value = url.split('/')[2];
             }
-            page.load( Pages._showPage, value );
+            console.log('Pages.loadPage(), url: ' + url + ', value: ' + value);
+            page.load( Pages._showPage, url ); //value );
         }
     }
     

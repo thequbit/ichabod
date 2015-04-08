@@ -21,7 +21,7 @@ var TableMaker = {
                 if ( j ==  0 ) {
                     index = data[i][key];
                 } else if (j == 1) {
-                    html += '<td><a href="#/' + urlPrefix + '/' + index + '">' + data[i][key] + '</a></td>';
+                    html += '<td><a href="#/' + urlPrefix + '/:' + index + '">' + data[i][key] + '</a></td>';
                 }
                 else if ( j > headers.length ) {
                     // nop

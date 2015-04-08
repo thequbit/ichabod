@@ -3,9 +3,9 @@ var PageCustomer = {
 
     name: 'customer',
     id: 'page-customer',
-    load : function(show, value) {
+    load : function(show, url) {
 
-        var url = 'customers/:' + value;
+        //var url = 'customers/:' + value;
         
         console.log("Loading customer data ...");
         
@@ -52,7 +52,7 @@ var PageCustomer = {
             delete accountTableData[i].primary_contact_id;
             delete accountTableData[i].primary_contact_email;
             delete accountTableData[i].primary_contact_phone;
-            accountTableData[i].primary_contact_name = '<a href="#/contacts/' + id + '">' + name + '</a>';
+            accountTableData[i].primary_contact_name = '<a href="#/contact/:' + id + '">' + name + '</a>';
         }
         console.log(accountTableData);
         html += TableMaker.makeTable('page-customer-customer-accounts', 'accounts', headers, accountTableData);

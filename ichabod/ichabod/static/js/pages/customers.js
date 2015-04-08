@@ -4,9 +4,9 @@ var PageCustomers = {
     name: 'customers',
     id: 'page-customers',
     _currentId: undefined,
-    load : function(doneCallback) {
+    load : function( show, url ) {
         
-        var url = 'customers/';
+        //var url = 'customers/';
         
         // get the customers from the server, then process them for display
         $.getJSON(url, function(customers) {
@@ -15,7 +15,7 @@ var PageCustomers = {
         
             PageCustomers._renderCustomers();
             
-            doneCallback('customers');
+            show('customers');
             
         });
     },
@@ -26,7 +26,7 @@ var PageCustomers = {
             var id = value.split('/')[0];
             if ( id == 'new' ) {
                 $('#page-customers-new-customer-dialog').foundation('reveal','open');
-                location.hash = '#/customers';
+                location.hash = '#/customers/';
             } else {
                 
             }
@@ -102,8 +102,7 @@ var PageCustomers = {
         });
         
         // TODO: nav after async is done
-        //location.hash = '#/customers/' + id;
-        Pages._navigate('/customer/' + id);
+        location.hash = '#/customer/:' + id + '/';
     }
 };
 
