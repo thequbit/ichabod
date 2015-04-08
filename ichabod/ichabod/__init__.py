@@ -19,8 +19,12 @@ def main(global_config, **settings):
     config.add_static_view('static', 'static', cache_max_age=3600)
 
     config.add_route('/', '/')
+
     config.add_route('customers','/customers/')
     config.add_route('customer', '/customer/:{id}')
+
+    config.add_route('accounts', '/accounts/')
+    config.add_route('account', '/account/:{id}')
 
     config.scan()
 
