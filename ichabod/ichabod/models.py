@@ -194,7 +194,7 @@ class Opertunities(Base, CreationMixin):
     id = Column(Integer, primary_key=True)
 
     account_id = Column(Integer, ForeignKey('accounts.id'))
-    load_id = Column(Integer, ForeignKey('leads.id'))    
+    lead_id = Column(Integer, ForeignKey('leads.id'))    
 
     name = Column(Unicode)
     description = Column(Unicode)
@@ -226,7 +226,7 @@ class Projects(Base, CreationMixin):
 
     name = Column(Unicode)
 
-    colections = relationship('Collections', backref='project')
+    collections = relationship('Collections', backref='project')
     contacts = relationship('Contacts', backref='project')
     comments = relationship('Comments', backref='project')
     lables = relationship('Labels', backref='project')
@@ -266,6 +266,8 @@ class Issues(Base, CreationMixin):
     __tablename__ = 'issues'
     id = Column(Integer, primary_key=True)
 
+    issue_priority_id = Column(Integer, ForeignKey('issue_priorities.id'), nullable=True)
+
     title = Column(Unicode)
     contents = Column(Unicode)
 
@@ -281,6 +283,7 @@ class IssuePriorities(Base, CreationMixin):
     contents = Column(Unicode)
     description = Column(Unicode)
 
+    issues = relationship('Issues', backref='issue_priority')
     comments = relationship('Comments', backref='issue_priority')
     lables = relationship('Labels', backref='issue_priority')
 
@@ -288,6 +291,8 @@ class RequirementCategories(Base, CreationMixin):
 
     __tablename__ = 'requirement_categories'
     id = Column(Integer, primary_key=True)
+
+    project_id = Column(Integer, ForeignKey('projects.id'))
 
     name = Column(Unicode)
     description = Column(Unicode)
@@ -301,7 +306,7 @@ class Requirements(Base, CreationMixin):
     __tablename__ = 'requrements'
     id = Column(Integer, primary_key=True)
 
-    project_id = Column(Integer, ForeignKey('projects.id'))
+    #project_id = Column(Integer, ForeignKey('projects.id'))
     requirement_category_id = Column(Integer, ForeignKey('requirement_categories.id'))
 
     title = Column(Unicode)

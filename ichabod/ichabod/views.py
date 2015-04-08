@@ -8,7 +8,24 @@ from sqlalchemy.exc import DBAPIError
 from .models import (
     DBSession,
     #MyModel,
+    Comments,
+    Lables,
+    Customers,
+    Accounts,
+    Contacts,
+    Leads,
+    Opertunties,
+    Job,
+    Projects,
+    Collections,
+    Files,
+    Issues,
+    IssuePriorities,
+    RequirementCategroies,
+    Requirements,
     )
+
+
 
 the_customers = [
         {
