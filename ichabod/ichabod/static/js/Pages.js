@@ -11,10 +11,16 @@ var Pages = {
     _showPage : function(pageName) {
         console.log("Pages._showPage(), pageName = '" + pageName + "'");
         Pages._hideLoadingPage();
-        document.getElementById(Pages._getPage(pageName).id).style.display = "inline";
-        if ( document.getElementById('pages-nav-' + Pages._currentPage) != null ) {
-            document.getElementById('pages-nav-' + Pages._currentPage).className = 
-                document.getElementById('pages-nav-' + Pages._currentPage).className.replace(' pages-nav-highlight','');
+        if ( typeof Pages._getPage(pageName) !== 'undefined' ) {
+            document.getElementById(Pages._getPage(pageName).id).style.display = "inline";
+            if ( document.getElementById('pages-nav-' + Pages._currentPage) != null ) {
+                document.getElementById('pages-nav-' + Pages._currentPage).className = 
+                    document.getElementById('pages-nav-' + Pages._currentPage).className.replace(' pages-nav-highlight','');
+            }
+        }
+        else {
+            alert("Pages.js: ERROR! Invalid page name: '" + pageName + "'");
+            return;
         }
         Pages._currentPage = pageName;
         if ( document.getElementById('pages-nav-' + Pages._currentPage) !== null ) {

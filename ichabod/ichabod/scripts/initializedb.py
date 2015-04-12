@@ -15,7 +15,9 @@ from ..models import (
     DBSession,
     #MyModel,
     Base,
-    Labels
+    Labels,
+    Customers,
+    Accounts,
     )
 
 
@@ -40,8 +42,23 @@ def main(argv=sys.argv):
     #    model = MyModel(name='one', value=1)
     #    DBSession.add(model)
 
+    customer = Customers.add(
+        session = DBSession,
+        name = 'GE',
+        description = 'General Eletric Corp.',
+    )
+
     Labels.add(
         session = DBSession,
+        customer_id = customer.id,
         name = "Important",
         description = "Max Important!",
     )
+
+    account = Accounts.add(
+        session = DBSession,
+        customer_id = customer.id,
+        name = 'GE Location X',
+        description = 'General Electric Location X',
+    )
+

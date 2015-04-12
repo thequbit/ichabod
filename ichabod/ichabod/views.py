@@ -8,108 +8,81 @@ from sqlalchemy.exc import DBAPIError
 from .models import (
     DBSession,
     #MyModel,
-    Comments,
-    Lables,
+    Root,
+    #Comments,
+    #Labels,
     Customers,
-    Accounts,
-    Contacts,
-    Leads,
-    Opertunties,
-    Job,
-    Projects,
-    Collections,
-    Files,
-    Issues,
-    IssuePriorities,
-    RequirementCategroies,
-    Requirements,
+    #Accounts,
+    #Contacts,
+    #Leads,
+    #Oppertunities,
+    #Jobs,
+    #Projects,
+    #Collections,
+    #Files,
+    #Issues,
+    #IssuePriorities,
+    #RequirementCategories,
+    #Requirements,
     )
 
 
 
-the_customers = [
-        {
-            "id": 47,
-            "name": "General Electric",
-            "notes": "General Electric is a great company.  We do a lot of business with them.",
-            "lables": [
-                {
-                    "id": 481,
-                    "text": "big-money"
-                },
-                {
-                    "id": 123,
-                    "text": "net-120"
-                }
-            ],
-            "accounts": [
-                {
-                    "id": 34,
-                    "name": "Niskayuna",
-                    "primary_contact_id": 92,
-                    "primary_contact_name": "Jim Smith",
-                    "primary_contact_email": "jsmith@ge.com",
-                    "primary_contact_phone": "(123)-456-7890",
-                    "lead_count": 4,
-                    "opertunity_count": 3,
-                    "projects": [
-                        {
-                            "id": 76,
-                            "name": "Transponder",
-                            "value": 458271
-                        },
-                        {
-                            "id": 89,
-                            "name": "Mechatronics",
-                            "value": 45913
-                        }
-                    ]
-                },
-                {
-                    "id": 34,
-                    "name": "Oklahoma City",
-                    "primary_contact_id": 76,
-                    "primary_contact_name": "Martha Stewart",
-                    "primary_contact_email": "mstewart@ge.com",
-                    "primary_contact_phone": "(987)-654-3210",
-                    "lead_count": 12,
-                    "opertunity_count": 7,
-                    "projects": [
-                        {
-                            "id": 67,
-                            "name": "Doodlething",
-                            "value": 7582
-                        },
-                        {
-                            "id": 12,
-                            "name": "Bobber",
-                            "value": 6614151
-                        }
-                    ]
-                }
-            ]
-        } 
-    ]
 
 @view_config(request_method='GET', route_name='/', renderer='templates/index.mak')
-def index(request):
+def index(self): 
 
     return {}
 
+'''
+@view_config(request_method='GET', route_name='/customers', renderer='json')
+def get_customers(self):
+
+    return {}
+'''
+
+@view_config(renderer='json')
+def get_customer(request):
+
+    resp = request.context.to_dict() 
+
+    print 'about to return the things ...'
+    print resp
+
+    return resp
+
+'''
+@view_config(context=Accounts, renderer='json')
+def get_customer(request):
+
+    return dict(customer=request.context.to_dict())
+'''
+
+
+'''
 @view_config(request_method='GET', route_name='customers', renderer='json')
 def get_customers(request):
 
     return the_customers
 
-@view_config(request_method='GET', route_name='customer', renderer='json')
+@view_config(request_method='GET', route_name='accounts', renderer='json')
 def get_customer(request):
 
     id = request.matchdict['id']
 
     return the_customers[0]
+'''
+
+'''
+@view_config(request_method='GET', route_name='', renderer='json')
+def get_customer_coments(request):
+
+    id = request.matchdict['id']
+
+    return []
 
 @view_config(request_method='GET', route_name='accounts', renderer='json')
 def get_accounts(request):
 
     return []
-
+'''

@@ -4,8 +4,10 @@ from sqlalchemy import engine_from_config
 from .models import (
     DBSession,
     Base,
+    Root,
     )
 
+import resources
 
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
@@ -13,18 +15,22 @@ def main(global_config, **settings):
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
     Base.metadata.bind = engine
-    config = Configurator(settings=settings)
+    config = Configurator(settings=settings, root_factory=resources.root_factory)
     config.include('pyramid_chameleon')
 
     config.add_static_view('static', 'static', cache_max_age=3600)
 
     config.add_route('/', '/')
 
+    
+
     #
     # Customers
     #
-    config.add_route('customers','/customers/')
-    config.add_route('customer', '/customer/:{id}')
+    #config.add_route('customers','/customers/')
+    #config.add_route('customer', '/customer/:{id}')
+
+    '''
     config.add_route('customer/comments', '/customer/:{id}/messages/')
     config.add_route('customer/labels', '/customer/:{id}/labels/')
     config.add_route('customer/accounts', '/customer/:{id}/accounts/')
@@ -126,6 +132,8 @@ def main(global_config, **settings):
     config.add_route('issue_priority/comments', '/issue_priority/:{id}/comments/')
     config.add_route('issue_priority/labels', '/issue_priority/:{id}/labels/')
     config.add_route('issue_priority/issues', '/issue_priority/:{id}/issues/')
+
+    '''
 
     config.scan()
 

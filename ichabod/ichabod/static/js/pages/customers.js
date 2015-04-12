@@ -9,9 +9,9 @@ var PageCustomers = {
         //var url = 'customers/';
         
         // get the customers from the server, then process them for display
-        $.getJSON(url, function(customers) {
+        $.getJSON(url, function(data) {
         
-            PageCustomers.customers = customers;
+            PageCustomers.customers = data.customers;
         
             PageCustomers._renderCustomers();
             
@@ -45,8 +45,10 @@ var PageCustomers = {
         for(var i=0; i<this.customers.length; i++) {
             var totalValue = 0;
             for(var j=0; j<this.customers[i].accounts.length; j++) {
-                for(var k=0; k<this.customers[i].accounts[j].projects.length; k++) {
-                    totalValue += this.customers[i].accounts[j].projects[k].value;
+                for(var k=0; k<this.customers[i].accounts[j].jobs.length; k++) {
+                    for(var l=0; l<this.customers[i].accounts[j].jobs[k].projects.length; k++) {
+                        totalValue += this.customers[i].accounts[j].jobs[k].projects[l].value;
+                    }
                 }
             }
             totalValue = '$' + totalValue;

@@ -5,15 +5,44 @@ var PageCustomer = {
     id: 'page-customer',
     load : function(show, url) {
 
-        //var url = 'customers/:' + value;
+        var parts = url.split('/')
+        if( parts.length == 3 && !isNaN(parseInt(parts[2])) && parseInt(parts[2]) > 0 ) {
+      
+	    var url = 'customers/' + parts[2];
         
-        console.log("Loading customer data ...");
+            console.log("Loading customer data ...");
         
-        $.getJSON(url, function(customer) {
-            PageCustomer.customer = customer;
-            PageCustomer._showCustomerInfo();
+            $.ajax({
+                url: url, 
+                dataType: 'json',
+                data: {},
+                success: function(customer) {
+                    PageCustomer.customer = customer;
+                    PageCustomer._showCustomerInfo();
+                    //show('customer');
+                },
+                error: function(data) {
+                    //alert('ERROR!');
+                },
+                complete: function(data) {
+                    //alert('DONE!');
+                    show('customer');
+                }
+            });
+        } else {
+
+            //alert('Invalid Customer ID, please check your permissions and try again.');
+
             show('customer');
-        });
+            window.location.href= '/#/home/';
+
+            //show('customer');
+            //location.hash = '#/home/'
+
+        }
+
+        //show('customer');
+
     },
     unload : function () {
     },
@@ -33,7 +62,7 @@ var PageCustomer = {
         
         var html = '';
         html += '<h5>Customer Name<input type="text" value="' + this.customer.name + '"></input></h5>';
-        html += '<h5>Customer Description<textarea rows="6">' + this.customer.notes + '</textarea></h5>';
+        html += '<h5>Customer Description<textarea rows="6">' + this.customer.description + '</textarea></h5>';
         
         html += '</br>';
         html += '<h4>Customer Accounts<a class="right button" href="#/accounts/new" class="button">New Account</a></h4>';
