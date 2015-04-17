@@ -32,7 +32,12 @@
 
     <div class="site-wrapper" id="site-wrapper">
         <div class="row">
-             <div class="large-2 columns side-bar visible-for-large-up">
+            <div class="large-12 columns top-info-bar">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-2 columns side-bar visible-for-large-up">
                 <h1 style="color: #008cba; text-align: center;">ichabod</h1>
                 <ul>
                     <hr/>

@@ -83,6 +83,10 @@ a, li, label, th, td, input, textarea {
 
 .size-72 { font-size: 72px; }
 
+.top-info-bar {
+    background-color: #617381;
+}
+
 .side-bar {
     padding-top: 15px;
     padding-left: 0;
