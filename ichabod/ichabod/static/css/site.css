@@ -19,8 +19,12 @@ body {
 /* foundation override */
 .row {
     max-width: none !important;
+    min-width: 1400px !important;
 }
 
+.columns {
+    min-width: 200px !important;
+}
 .dummy-column {
     color: #eee;
 }
@@ -62,6 +66,11 @@ a, li, label, th, td, input, textarea {
     /*font-size: 100% !important;*/
 }
 
+.page-padding {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
 
 .size-12 { font-size: 12px; }
       
@@ -85,6 +94,22 @@ a, li, label, th, td, input, textarea {
 
 .top-info-bar {
     background-color: #617381;
+    border-bottom: 1px solid #333;
+}
+
+.top-info-bar-logo {
+    /*border: 1px solid #008CBA;
+    border-radius: 4px;*/
+    min-width: 200px;
+    width: 16.66667%;
+    display: inline-block;
+    color: #eee !important;
+    font-size: 200%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0.9375rem;
+    border-right: 1px solid #333;
 }
 
 .side-bar {
@@ -95,7 +120,7 @@ a, li, label, th, td, input, textarea {
     /*min-width: 200px;*/
     width: 16.666666667%;
     /*max-width: 200px;*/
-    background-color: #333;
+    background-color: #617381; /* #333; */
     height: 100%;
 }
 

@@ -31,18 +31,20 @@
     </div>
 
     <div class="site-wrapper" id="site-wrapper">
+
+        <!--
         <div class="row">
             <div class="large-12 columns top-info-bar">
-                
+               <div class="top-info-bar-logo">ichabod</div> 
             </div>
         </div>
+        -->
+
         <div class="row">
             <div class="large-2 columns side-bar visible-for-large-up">
-                <h1 style="color: #008cba; text-align: center;">ichabod</h1>
+                <!--<h1 style="color: #008cba; text-align: center;">ichabod</h1>-->
                 <ul>
-                    <hr/>
                     <li><a href="#/home/" id="pages-nav-home" class="size-24"><i class="step fi-home"></i> Home</a></li>
-                    <hr/>
                     <li><a href="#/customers/" id="pages-nav-customers" class="size-24"><i class="step fi-torsos-all"></i> Customers</a></li>
                     <li><a href="#/accounts/" id="pages-nav-accounts" class="size-24"><i class="step fi-results-demographics"></i> Accounts</a></li>
                     <li><a href="#/contacts/" id="pages-nav-contacts" class="size-24"><i class="step fi-address-book"></i> Contacts</a></li>
@@ -56,23 +58,34 @@
                     <li><a href="#/logout/" id="pages-nav-logout" class="size-24"><i class="step fi-x-circle"></i> Logout</a></li>
                 </ul>
             </div>
-            
+
+            <div class="large-10 columns">
+            <!--<div class="row">
+                <div class="large-12 columns top-info-bar">
+                   <div class="top-info-bar-logo">ichabod</div>
+                </div>
+            </div>-->
+ 
+            <!--<div class="row">
+                <div class="large-10 columns">-->
+
             <!-- Loading -->
-            <div class="large-10 columns page" id="page-loading">
-                <div class="row">
+            <!--<div class="large-12 columns page" id="page-loading">-->
+                <div class="row page" id="page-loading">
                     <div class="large-12 columns">
                         <h3>please wait ...</h3>
                     </div>
                 </div>
-            </div>
+            <!--</div>-->
             
             <!-- Home -->
-            <div class="large-10 columns page" id="page-home">
-                <div class="row">
+            <!--<div class="large-12 columns page" id="page-home">-->
+            <div class="page" id="page-home">
+                <div class="row page-padding">
                     <div class="large-11 columns page-header"></div>
                     <hr/>
                 </div>
-                <div class="row page-contents">
+                <div class="row page-padding">
                     <div class="large-12 columns">
                         hi.
                     </div>
@@ -80,22 +93,20 @@
             </div>
             
             <!-- Customers -->
-            <div class="large-10 columns page force-scroll" id="page-customers">
-                <div class="row">
+            <!--<div class="large-10 columns page force-scroll" id="page-customers">-->
+            <div class="page" id="page-customers">
+                <div class="row page-padding">
                     <div class="large-11 columns page-header"></div>
                     <hr/>
                 </div>
-                <div class="row top-padding">
-                    <div class="large-1 columns dummy-column">.</div>
-                    
-                    <div class="large-10 columns">
+                <div class="row top-padding page-padding">
+                    <div class="large-12 columns">
                         <a href="#/customers/new" class="button">New Customer</a>
                         <!--<h4>Customers</h4>-->
                         <div id="page-customers-customer-list-container"></div>
                     </div>
-
-                    <div class="large-1 columns dummy-column">.</div>
-                    <div id="page-customers-new-customer-dialog" class="reveal-modal" data-reveal aria-labelledby="New Customer" aria-hidden="true" role="dialog"></div>
+                    <div id="page-customers-new-customer-dialog" class="reveal-modal" data-reveal aria-labelledby="New Customer" aria-hidden="true" role="dialog">
+                    </div>
                 </div>
             </div>
             
@@ -253,7 +264,12 @@
                     </div>
                 </div>
             </div>
-            
+    
+            </div>        
+
+            <!--    </div>
+            </div>-->
+
         </div>
     </div>
     
