@@ -60,216 +60,199 @@
             </div>
 
             <div class="large-10 columns">
-            <!--<div class="row">
-                <div class="large-12 columns top-info-bar">
-                   <div class="top-info-bar-logo">ichabod</div>
-                </div>
-            </div>-->
- 
-            <!--<div class="row">
-                <div class="large-10 columns">-->
 
-            <!-- Loading -->
-            <!--<div class="large-12 columns page" id="page-loading">-->
-                <div class="row page" id="page-loading">
-                    <div class="large-12 columns">
-                        <h3>please wait ...</h3>
+                <!-- Loading -->
+                <div class="page"id="page-loading">
+                    <div class="row page" id="page-loading">
+                        <div class="large-12 columns">
+                            <h3>please wait ...</h3>
+                        </div>
                     </div>
-                </div>
-            <!--</div>-->
-            
-            <!-- Home -->
-            <!--<div class="large-12 columns page" id="page-home">-->
-            <div class="page" id="page-home">
-                <div class="row page-padding">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
-                </div>
-                <div class="row page-padding">
-                    <div class="large-12 columns">
-                        hi.
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Customers -->
-            <!--<div class="large-10 columns page force-scroll" id="page-customers">-->
-            <div class="page" id="page-customers">
-                <div class="row page-padding">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
-                </div>
-                <div class="row top-padding page-padding">
-                    <div class="large-12 columns">
-                        <a href="#/customers/new" class="button">New Customer</a>
-                        <!--<h4>Customers</h4>-->
-                        <div id="page-customers-customer-list-container"></div>
-                    </div>
-                    <div id="page-customers-new-customer-dialog" class="reveal-modal" data-reveal aria-labelledby="New Customer" aria-hidden="true" role="dialog">
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Customer -->
-            <div class="large-10 columns page force-scroll" id="page-customer">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
-                </div>
-                <div class="row top-padding">
-                    <div class="large-1 columns dummy-column">.</div>
-                    <div class="large-10 columns">
-                        <div id="page-customer-customer-info"></div>
-                    </div>
-                    <div class="large-1 columns dummy-column">.</div>
-                </div>
-            </div>
-            
-            <!-- Accounts -->
-            <div class="large-10 columns page" id="page-accounts">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Home -->
+                <div class="page" id="page-home">
+                    <div class="row page-padding">
+                        <div class="large-11 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Contacts -->
-            <div class="large-10 columns page" id="page-contacts">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    <div class="row page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Customers -->
+                <div class="page" id="page-customers">
+                    <div class="row page-padding">
+                        <div class="large-11 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Leads -->
-            <div class="large-10 columns page" id="page-leads">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            <a href="#/customers/new" class="button">New Customer</a>
+                            <div id="page-customers-customer-list-container"></div>
+                        </div>
+                        <div id="page-customers-new-customer-dialog" class="reveal-modal" data-reveal aria-labelledby="New Customer" aria-hidden="true" role="dialog">
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Customer -->
+                <div class="page" id="page-customer">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Opertunities -->
-            <div class="large-10 columns page" id="page-opertunities">
-                <div class="row ">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            <div id="page-customer-customer-info"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Accounts -->
+                <div class="page" id="page-accounts">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Jobs -->
-            <div class="large-10 columns page" id="page-jobs">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Contacts -->
+                <div class="page" id="page-contacts">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Files -->
-            <div class="large-10 columns page" id="page-files">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Leads -->
+                <div class="page" id="page-leads">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Assets -->
-            <div class="large-10 columns page" id="page-assets">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Opertunities -->
+                <div class="page" id="page-opertunities">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Reports -->
-            <div class="large-10 columns page" id="page-reports">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Jobs -->
+                <div class="page" id="page-jobs">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Settings -->
-            <div class="large-10 columns page" id="page-settings">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Files -->
+                <div class="page" id="page-files">
+                    <div class="row">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Logout -->
-            <div class="large-10 columns page" id="page-logout">
-                <div class="row">
-                    <div class="large-11 columns page-header"></div>
-                    <hr/>
+                    
+                    <div class="row top-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="row top-padding">
-                    <div class="large-12 columns">
-                        hi.
+                <!-- Assets -->
+                <div class="page" id="page-assets">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
+                    </div>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
                     </div>
                 </div>
-            </div>
-    
+                
+                <!-- Reports -->
+                <div class="large-10" id="page-reports">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
+                    </div>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Settings -->
+                <div class="page" id="page-settings">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
+                    </div>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Logout -->
+                <div class="page" id="page-logout">
+                    <div class="row page-padding">
+                        <div class="large-12 columns page-header"></div>
+                        <hr/>
+                    </div>
+                    
+                    <div class="row top-padding page-padding">
+                        <div class="large-12 columns">
+                            hi.
+                        </div>
+                    </div>
+                </div>
+        
             </div>        
-
-            <!--    </div>
-            </div>-->
-
         </div>
     </div>
     
